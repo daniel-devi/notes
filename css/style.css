@@ -1,0 +1,236 @@
+
+.darkmode{
+    background-color: rgba(0, 0, 0, 0.263);
+}
+
+/* ### NavBar ####### */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+nav img{
+    width: 80px;
+    height: 80px;
+    margin: auto 0px;
+}
+
+/* ##########  DarkMode Toggle ######### */
+.toggle-switch {
+    margin: auto 0px;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+  
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark);
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+  }
+  
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    transform: translateX(60px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+
+/* ##### Body ###### */
+
+.head{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.head h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 20px;
+    font-weight: 8em;
+}
+
+.head i {
+    margin: auto 0px;
+}
+
+.chose{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.chose a{
+    width: 80px;
+    height: 20px;
+    padding: 15px 0px;
+    font-weight: bolder;
+    background-color: ghostwhite;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 5px 5px #0000006c;
+}
+
+.chose a:active{
+    color: white;
+}
+
+main{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: space-evenly;
+}
+/* ### NotePad  ###### */
+
+.notes{
+    display: grid;
+    grid-template-columns:50px 350px ;
+    gap: 2px;
+    background-color: #2196F3;
+    padding: 10px;
+    width: 400px;
+    box-shadow: #00000027 3px 5px 10px;
+    border-radius: 30px;
+}
+
+.notes > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px 08px;
+    font-size: 30px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center  ;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold ;
+  }
+
+.item{
+    font-weight:bolder;
+    border-radius: 0px 9px 9px 0px;
+}
+
+.mark{
+    background-color: transparent;
+    border: gray 1px;
+}
+
+#text{
+    width: 320px;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+
+/* ### Checkbox #######*/
+
+.to-do{
+    display: grid;
+    grid-template-columns:50px 350px ;
+    gap: 2px;
+    background-color: #bac3cb;
+    padding: 10px;
+    width: 400px;
+    box-shadow: #00000027 3px 5px 10px;
+    border-radius: 30px;
+}
+
+.to-do > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px 08px;
+    font-size: 30px;
+}
+
+.ite1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center  ;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold ;
+  }
+
+.todo{
+    font-weight:bolder;
+    border-radius: 0px 9px 9px 0px;
+}
+
+.mark{
+    background-color: transparent;
+    border: gray 1px;
+}
+
+#check{
+    width: 320px;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+#ceck{
+    width: 20px;
+    height: 20px;
+    color: gray;
+    background-color: #28292c;  
+    border: #28292c ;
+}
+

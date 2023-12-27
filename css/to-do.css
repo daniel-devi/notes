@@ -1,0 +1,205 @@
+
+body{
+  scroll-behavior: smooth;
+}
+
+.darkmode{
+  background-color: #00000089;
+}
+/* ### NavBar ####### */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+nav img{
+    width: 80px;
+    height: 80px;
+    margin: auto 0px;
+}
+
+/* ##########  DarkMode Toggle ######### */
+.toggle-switch {
+    margin: auto 0px;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+  
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark);
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+  }
+  
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    transform: translateX(60px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+
+/* ##### Body ###### */
+
+.head{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.head h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 20px;
+    font-weight: 8em;
+}
+
+.head i {
+    margin: auto 0px;
+}
+
+.chose{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.chose a{
+    width: 80px;
+    height: 20px;
+    padding: 15px 0px;
+    font-weight: bolder;
+    background-color: ghostwhite;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 5px 5px #0000006c;
+}
+
+.chose a:active{
+    color: white;
+}
+
+.file{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 100%;
+  border: groove 1px gray;
+  text-align: center;
+  justify-content: center;
+}
+
+
+#pad{
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+  margin: 20px 0px;
+  margin-left: 230px;
+}
+
+.menue-bar{
+  display: flex;
+  flex-direction: row;
+  border: 1px black dotted;
+  width: 1180px;;
+  height: 60px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.menue-bar i {
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.menue-bar a {
+  color: black;
+}
+
+.menue-bar button{
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  height: 10px;
+}
+
+#note{
+  display: flex;
+  width: 1200px;
+  height: 100%;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.note textarea{
+  width: 1200px;
+  height: 600px;
+  padding: 20px 20px;
+  resize: none;
+  font-size: large;
+  scroll-behavior:smooth;
+  background-color: #0000003b;
+}
+
+.bold-text{
+  font-weight: bolder;
+}
+.underline{
+  text-decoration: underline black 1px;
+}
+
+.stroke{
+  text-decoration: line-through;
+}
